@@ -9,8 +9,9 @@ public:
     Node();
     int data;
     Node* Next;
-    void InsertBeginning(Node*,Node*);
+    void InsertBeginning(Node*);
     void DisplayList();
+    void InsertLast(Node*, Node*);
 
 };
 

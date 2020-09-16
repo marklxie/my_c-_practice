@@ -28,7 +28,7 @@ int main()
 
     head -> data = 1;
     head -> Next = one;
-
+  
     one -> data = 2;
     one -> Next = two;
 
@@ -48,14 +48,11 @@ int main()
     }*/
 
     head -> DisplayList();
-    Node** pointHead = &head;
     Node* zero = NULL;
     zero = new Node();
     zero -> data = 0;
-    cout << *pointHead << endl;
     zero -> InsertBeginning(head);
     cout << zero -> Next << endl;
-    cout << *pointHead << endl;
     zero -> DisplayList();
     return 0;
 }

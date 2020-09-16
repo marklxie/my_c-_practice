@@ -5,18 +5,22 @@ Node::Node()
 
 };
 
-void Node::InsertBeginning(Node* newNode, Node* head){
+void Node::InsertBeginning(Node* head){
     Node** pointHead(&head);
-    newNode -> Next = *pointHead;
-
+    Next = *pointHead;
 }
 
 void Node::DisplayList(){
-    int intHold = data;
+    cout << data << endl;
     Node* hold = Next;
-        cout << intHold << endl;
+
     while(hold -> Next != NULL){
         cout << hold -> data << endl;
         hold = hold -> Next;
     }
+        cout << hold -> data << endl;
+}
+
+void Node::InsertLast(Node * newNode, Node *head){
+
 }
